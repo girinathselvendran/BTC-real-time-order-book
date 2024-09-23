@@ -1,0 +1,68 @@
+.OrderBook {
+  min-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+
+  .book__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .book__buttons button {
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-weight: bold;
+  }
+
+  .success-btn {
+    background-color: green;
+    color: white;
+  }
+
+  .failed-btn {
+    background-color: red;
+    color: white;
+  }
+
+  button[disabled] {
+    background-color: rgb(217, 214, 214);
+  }
+  .hr {
+    border-bottom: 1px solid white;
+  }
+
+  .OrderBook_StatusWrap {
+    display: flex;
+    justify-content: center;
+
+    .OrderBook_Status {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  .OrderBook_Header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .OrderBook_Header_Columns {
+      z-index: 2;
+      flex: 1;
+      justify-content: center;
+      margin-left: 50px;
+      font-weight: bold;
+    }
+  }
+
+  .OrderBook_RecordsWrap {
+    display: flex;
+    flex-direction: row;
+  }
+}
